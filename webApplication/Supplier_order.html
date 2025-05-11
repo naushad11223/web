@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supplier Orders</title>
+  <link rel="stylesheet" href="Supplier_order.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Agrifield - Supplier Orders</h1>
+    <nav>
+      <ul>
+        <li><a href="Supplier.html">Dashboard</a></li>
+        <li><a href="Suppier_inventory.html">Inventory</a></li>
+        
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="orders-section">
+    <h2>Recent Orders</h2>
+    <table class="orders-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Buyer</th>
+          <th>Product</th>
+          <th>Quantity (kg)</th>
+          <th>Total Price (₹)</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ORD101</td>
+          <td>Rahul Sharma</td>
+          <td>Tomatoes</td>
+          <td>50</td>
+          <td>₹2500</td>
+          <td><span class="pending">Pending</span></td>
+          <td><button class="approve-btn">Approve</button></td>
+        </tr>
+        <tr>
+          <td>ORD102</td>
+          <td>Sunita Verma</td>
+          <td>Wheat</td>
+          <td>100</td>
+          <td>₹4500</td>
+          <td><span class="approved">Approved</span></td>
+          <td><button class="disabled-btn" disabled>Approved</button></td>
+        </tr>
+        <tr>
+          <td>ORD103</td>
+          <td>Amit Patel</td>
+          <td>Onions</td>
+          <td>75</td>
+          <td>₹3750</td>
+          <td><span class="pending">Pending</span></td>
+          <td><button class="approve-btn">Approve</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

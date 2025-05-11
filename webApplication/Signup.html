@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="Signup.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="signup-box">
+      <h2>Create Account</h2>
+      <form id="signup-form" method="POST" action="http://localhost:3000/webApplication/signup_process.php">
+        <label>First Name</label>
+        <div class="input-group">
+          <i data-lucide="user"></i>
+          <input type="text" name="first_name" required />
+        </div>
+
+        <label>Last Name</label>
+        <div class="input-group">
+          <i data-lucide="user"></i>
+          <input type="text" name="last_name" required />
+        </div>
+
+        <label>Phone</label>
+        <div class="input-group">
+          <i data-lucide="phone"></i>
+          <input type="tel" name="phoneNumber" required />
+        </div>
+
+        <label>Email</label>
+        <div class="input-group">
+          <i data-lucide="mail"></i>
+          <input type="email" name="email" required />
+        </div>
+
+        <label>Password</label>
+        <div class="input-group">
+          <i data-lucide="lock"></i>
+          <input type="password" name="password" id="password" required />
+          <button type="button" class="toggle-password" onclick="togglePassword()">
+            <i data-lucide="eye" id="toggleIcon"></i>
+          </button>
+        </div>
+        <!-- User Type Dropdown -->
+                    <div class="login__field">
+                        <label for="user_type" class="form-label">User Type:</label>
+                        <select id="user_type" name="user_type" class="form-select login__input" required>
+                            <option value="" selected disabled>Select User Type</option>
+                            <option value="Customer">Customer</option>
+                            <option value="Retailer">Retailer</option>
+                            <option value="Supplier">supplier</option>
+                            
+                        </select>
+                    </div>
+
+        <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+      <p class="bottom-text">Already have an account? <a href="Login.html">Login</a></p>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function togglePassword() {
+      const password = document.getElementById("password");
+      const toggleIcon = document.getElementById("toggleIcon");
+      const isVisible = password.type === "text";
+      password.type = isVisible ? "password" : "text";
+      toggleIcon.setAttribute("data-lucide", isVisible ? "eye" : "eye-off");
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

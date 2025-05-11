@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Dashboard</title>
+  <link rel="stylesheet" href="customer.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Agrifield</div>
+    <nav>
+      <ul>
+        <li><a href="Coustomer_product.html">Home</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#settings">Settings</a></li>
+        <li><a href="#messages">Messages</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products" class="product-section">
+      <h2>Available Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product Image">
+          <h3>Fresh Tomatoes</h3>
+          <p>Price: ₹50/kg</p>
+          <button class="buy-btn">Buy Now</button>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product Image">
+          <h3>Organic Potatoes</h3>
+          <p>Price: ₹40/kg</p>
+          <button class="buy-btn">Buy Now</button>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+      </div>
+    </section>
+
+    <section id="settings" class="settings-section">
+      <h2>Update Address</h2>
+      <form>
+        <label for="address">Address</label><br/>
+        <textarea id="address" rows="4" cols="50" placeholder="Enter your address here..."></textarea><br/>
+        <button type="submit">Update Address</button>
+      </form>
+    </section>
+
+    <section id="messages" class="messages-section">
+      <h2>Message Seller</h2>
+      <form>
+        <label for="seller">Seller Name</label><br/>
+        <input type="text" id="seller" placeholder="Enter seller name"/><br/>
+        <label for="message">Message</label><br/>
+        <textarea id="message" rows="4" cols="50" placeholder="Type your message..."></textarea><br/>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

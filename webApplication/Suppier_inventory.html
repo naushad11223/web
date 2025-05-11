@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory Dashboard</title>
+  <link rel="stylesheet" href="Supplier_inventory.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Agrifield</h1>
+    <nav>
+      <ul>
+        <li><a href="Supplier.html">Dashboard</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="inventory-section">
+    <h2>Product Inventory</h2>
+    <table class="inventory-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Stock (ton)</th>
+          <th>Price (₹/kg)</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>P001</td>
+          <td>Organic Tomatoes</td>
+          <td>Vegetables</td>
+          <td>120</td>
+          <td>50</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>P002</td>
+          <td>Rice (Basmati)</td>
+          <td>Grains</td>
+          <td>500</td>
+          <td>80</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+        <!-- More rows as needed -->
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

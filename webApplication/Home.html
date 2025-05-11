@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="Home.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Agrifeild</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Coustomer_product.html">Products</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="Login.html" class="login-btn">Login</a>
+        <a href="Signup.html" class="signup-btn">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Image Slideshow -->
+    <div class="slideshow-container">
+      <div class="slide"><img src="pictures/home1.jpeg" alt="Agriculture Image 1"></div>
+      <div class="slide"><img src="pictures/home.jpeg" alt="Agriculture Image 2"></div>
+      <div class="slide"><img src="pictures/home2.jpeg" alt="Agriculture Image 3"></div>
+      <div class="slide"><img src="pictures/home3.jpeg" alt="Agriculture Image 3"></div>
+    </div>
+
+    <section class="hero">
+      <h1>Welcome to Agrifeild</h1>
+      <p>Your one-stop solution for amazing products and services.</p>
+      <a href="Coustomer_product.html" class="hero-btn">Explore Products</a>
+    </section>
+  </main>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change every 3 seconds
+    }
+
+    showSlides();
+  </script>
+</body>
+</html>

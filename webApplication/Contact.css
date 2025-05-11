@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #1F7D53;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1F7D53;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.email-link {
+  color: #e0ffe3;
+  font-weight: 500;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-around;
+  background-color: #e0ffe3;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h1 {
+  font-size: 2rem;
+  color: #1d0f52;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #1d0f52;
+  margin-top: 1rem;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #aaa;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #1d0f52;
+  font-size: 1.2rem;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 300px;
+}
